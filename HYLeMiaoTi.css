@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "HYLeMiaoTi";
+  src: url("https://cdn.jsdelivr.net/gh/CuteCatXiao/Flarum@main/HYLeMiaoTi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
