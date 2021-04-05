@@ -11,7 +11,7 @@
 }
 
 /* 小设备访问时隐藏一些功能 */
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   .item-forumStatisticsWidget,
   .item-lastDiscussionViewers {
     display: none !important;
