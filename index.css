@@ -1,0 +1,105 @@
+/* 设定字体 */
+.Hero h2 {
+  font-weight: 800;
+}
+
+/* 小设备访问时隐藏一些功能 */
+@media (max-width: 767px) {
+  .item-forumStatisticsWidget,
+  .item-lastDiscussionViewers {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .App-content {
+    margin: 20px auto;
+    max-width: 1400px;
+  }
+  .Hero {
+    border-radius: 5px;
+  }
+}
+
+/* 添加[沙发][板凳][地板]等徽章 */
+/*沙发*/
+div.PostStream-item[data-index="1"]
+  article.CommentPost.Post
+  header.Post-header
+  ul:not(ul.PostUser-badges.badges):not(ul.UserCard-badges.badges, ul.UserCard-info)::after {
+  content: "沙发";
+}
+/*板凳*/
+div.PostStream-item[data-index="2"]
+  article.CommentPost.Post
+  header.Post-header
+  ul:not(ul.PostUser-badges.badges):not(ul.UserCard-badges.badges, ul.UserCard-info)::after {
+  content: "椅子";
+}
+/*地板*/
+div.PostStream-item[data-index="3"]
+  article.CommentPost.Post
+  header.Post-header
+  ul:not(ul.PostUser-badges.badges):not(ul.UserCard-badges.badges, ul.UserCard-info)::after {
+  content: "地板";
+}
+/*美化样式*/
+div.PostStream-item[data-index="1"]
+  article.CommentPost.Post
+  header.Post-header
+  ul:not(ul.PostUser-badges.badges):not(ul.UserCard-badges.badges, ul.UserCard-info)::after,
+div.PostStream-item[data-index="2"]
+  article.CommentPost.Post
+  header.Post-header
+  ul:not(ul.PostUser-badges.badges):not(ul.UserCard-badges.badges, ul.UserCard-info)::after,
+div.PostStream-item[data-index="3"]
+  article.CommentPost.Post
+  header.Post-header
+  ul:not(ul.PostUser-badges.badges):not(ul.UserCard-badges.badges, ul.UserCard-info)::after {
+  position: relative;
+  z-index: 2;
+  background: @hero-bg;
+  padding: 1px 5px 1px 5px;
+  color: @link-color;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  float: right;
+}
+div.PostStream-item[data-index="1"]
+  article.CommentPost.Post.Post--by-start-user
+  .Post-body,
+div.PostStream-item[data-index="2"]
+  article.CommentPost.Post.Post--by-start-user
+  .Post-body,
+div.PostStream-item[data-index="3"]
+  article.CommentPost.Post.Post--by-start-user
+  .Post-body {
+  clear: both;
+}
+
+/* 小猫咪滑鼠 */
+button {
+  cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/work.cur),
+    alias;
+}
+p {
+  cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/texto.cur),
+    auto;
+}
+a {
+  cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur),
+    auto;
+}
+a:active {
+  cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/work.cur),
+    alias;
+}
+body {
+  cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/normal.cur),
+    auto;
+}
+
+/* 搜索框 */
+.Search-input {
+  border-radius: 30px;
+}
