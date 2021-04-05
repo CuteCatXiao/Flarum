@@ -2,6 +2,13 @@
 .Hero h2 {
   font-weight: 800;
 }
+@font-face {
+  font-family: "HYLeMiaoTi";
+  src: url("https://cdn.jsdelivr.net/gh/CuteCatXiao/Flarum@main/HYLeMiaoTi.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* 小设备访问时隐藏一些功能 */
 @media (max-width: 767px) {
