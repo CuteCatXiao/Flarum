@@ -27,6 +27,11 @@
   }
 }
 
+/* 标签页隐藏论坛统计 */
+.TagsPage .item-forumStatisticsWidget {
+  display: none !important;
+}
+
 /* 添加[沙发][板凳][地板]等徽章 */
 /*沙发*/
 div.PostStream-item[data-index="1"]
