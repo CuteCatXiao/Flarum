@@ -112,6 +112,6 @@ body {
 }
 
 /* 搜索框 */
-.Search-input {
+.Search-input input{
   border-radius: 30px;
 }
